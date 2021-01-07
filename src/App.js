@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+// import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
+// import { Navbar, Nav } from "react-bootstrap";
 import "./App.css";
-import About from "./About";
-import Contact from "./Contact";
-import CreateUser from "./CreateUser";
-import UserList from "./UserList";
-import Home from "./Home";
+// import About from "./About";
+// import Contact from "./Contact";
+// import CreateUser from "./CreateUser";
+// import UserList from "./UserList";
+// import Home from "./Home";
+import HomeContainer from "./containers/HomeContainer";
+import HeaderContainer from "./containers/HeaderContainer";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HeaderContainer />
+      <HomeContainer />
+      {/* <Router>
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand href="/">BLOG</Navbar.Brand>
           <Nav className="mr-auto">
@@ -54,7 +58,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
     </div>
   );
 }
